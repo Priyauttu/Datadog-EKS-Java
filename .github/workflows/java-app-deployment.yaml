@@ -2,12 +2,12 @@ name: Build and Deploy Java App
 
 on:
   push:
-    branches: [ "feature_" ]
+    branches: [ "feature_priya" ]
 
 jobs:
   build-and-push:
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/feature_ansh' # Running this job only for pre-master branch
+    if: github.ref == 'refs/heads/feature_priya' # Running this job only for pre-master branch
 
     steps:
       # Step 1: Checkout Code
@@ -88,7 +88,7 @@ jobs:
                 with:
                   aws-access-key-id: ${{ secrets.AWS_ACCESS__KEY_ID }}
                   aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-                  aws-region: ap-south-1
+                  aws-region: us-east-2
                   cluster-name: arcade-eks
                   config-files: ./Application/java-helm/values.yaml
                   chart-path: ./Application/java-helm

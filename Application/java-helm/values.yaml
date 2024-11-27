@@ -80,8 +80,9 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
-# env:
-#   - name: DD_AGENT_HOST
-#     value: "localhost"
-#   - name: DD_TRACE_AGENT_PORT
-#     value: "8126"
+env:
+  - name: DD_AGENT_HOST
+    value: "localhost"
+  - name: DD_TRACE_AGENT_PORT
+    value: "8126"
+  
