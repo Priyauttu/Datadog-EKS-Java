@@ -85,4 +85,14 @@ affinity: {}
 #     value: "localhost"
 #   - name: DD_TRACE_AGENT_PORT
 #     value: "8126"
+    - name: DD_API_KEY
+      value: ad470ea5fd6ae1895565c8c6b49e9b01
+    - name: DD_APP_KEY		# Optional
+      value: e2b6886f14ca90a61e9a8f27ffd7f87869489703	# Optional
+    - name: DD_COLLECT_KUBERNETES_EVENTS
+      value: "true"
+    - name: DD_LEADER_ELECTION
+      value: "true"
+    - name: DD_EXTERNAL_METRICS_PROVIDER_ENABLED
+      value: "true"
   
