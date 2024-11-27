@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: java-deploy
   labels:
-    app: java
+    app: java 
 spec:
   {{- if not .Values.autoscaling.enabled }}
   replicas: {{ .Values.replicaCount }}
