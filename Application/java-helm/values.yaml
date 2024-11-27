@@ -8,7 +8,7 @@ image:
   repository: ghcr.io/priyauttu/hello-world-app
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: 7 #NEED TO AUTOMATE THIS
+  tag: 9 #NEED TO AUTOMATE THIS
 
 imagePullSecrets: []
 nameOverride: ""
@@ -80,7 +80,7 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
-# env:
+env:
 #   - name: DD_AGENT_HOST
 #     value: "localhost"
 #   - name: DD_TRACE_AGENT_PORT
