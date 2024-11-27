@@ -5,10 +5,10 @@
 replicaCount: 1
 
 image:
-  repository: ghcr.io/hungryengineer/hello-world-app
+  repository: ghcr.io/priyauttu/hello-world-app
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: 6 #NEED TO AUTOMATE THIS
+  tag: 7 #NEED TO AUTOMATE THIS
 
 imagePullSecrets: []
 nameOverride: ""
