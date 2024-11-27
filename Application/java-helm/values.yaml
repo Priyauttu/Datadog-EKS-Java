@@ -8,7 +8,7 @@ image:
   repository: ghcr.io/priyauttu/hello-world-app
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: 9 #NEED TO AUTOMATE THIS
+  tag: 10 #NEED TO AUTOMATE THIS
 
 imagePullSecrets: []
 nameOverride: ""
@@ -94,5 +94,7 @@ env:
     - name: DD_LEADER_ELECTION
       value: "true"
     - name: DD_EXTERNAL_METRICS_PROVIDER_ENABLED
+      value: "true"
+    - name: DD_APM_ENABLED
       value: "true"
   
